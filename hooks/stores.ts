@@ -1,6 +1,6 @@
 import fs from "fs";
 import matter from "gray-matter";
-import { Store, StoreAttributes } from "../types";
+import { Store, StoreAttributes } from "../@types";
 import { slugify } from "../utility";
 
 const files = fs.readdirSync(`${process.cwd()}/data/stores`);
