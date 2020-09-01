@@ -1,6 +1,6 @@
 import Head from "next/head";
-import { getStores } from "./api/hooks/stores";
-import { Store } from "./api/types";
+import { getStores } from "../hooks";
+import { Store } from "../@types";
 import Link from "next/link";
 
 interface Homepage {

@@ -2,8 +2,8 @@ import React from "react";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { StoreAttributes } from "../api/types";
-import { slugify } from "../api/utility";
+import { StoreAttributes } from "../../@types";
+import { slugify } from "../../utility";
 
 export default function Post({ content, attributes }) {
 	return (
