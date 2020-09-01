@@ -23,7 +23,7 @@ export default function Home({ file }) {
 			</Head>
 			<main>
 				<h1 className="title">
-					{/*** Render the title from `home.json`*/}
+					{/*** Render the title from `test.json`*/}
 					{data.title}
 				</h1>
 				//...
@@ -43,7 +43,7 @@ export const getStaticProps: GetStaticProps = async function ({
 	if (preview) {
 		return getGithubPreviewProps({
 			...previewData,
-			fileRelativePath: "content/home.json",
+			fileRelativePath: "data/test.json",
 			parse: parseJson
 		});
 	}
@@ -53,7 +53,7 @@ export const getStaticProps: GetStaticProps = async function ({
 			error: null,
 			preview: false,
 			file: {
-				fileRelativePath: "content/home.json",
+				fileRelativePath: "data/test.json",
 				data: (await import("../data/test.json")).default
 			}
 		}
